@@ -10,3 +10,10 @@ how to create user
 ------------------
 Syntax : create user <username> identified by <passward>
 sql > create user adil identified by adil@123
+
+Note : the crated user does not have any permission 
+
+ Give the permission for created user
+ -------------------------------------
+ Sysntax : grant resource, connect to <username>
+ sql > grant resource,connect to adil
