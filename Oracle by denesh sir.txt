@@ -91,6 +91,22 @@ insert into employee(empid, ename, salary, designation)
 values('E004', 'DDD', 20000, 'Admin');
 	
 sql> select distinct designation from employee;
+
+Important :create table from (existing) another table with data
+         Syntax: create table <table_name>
+		        AS
+		        select <existing_table_column_name> "<new_table_col_name>"
+				       <existing_table_column_name> "<new_table_col_name>"
+				from <existing_table_name>;	 
+sql > create table emp_name_designation
+AS
+select ename "employee_name",
+       DESIGNATION "designation"
+from employee;
+
+select * from emp_name_designation				
+
+
 -> Order by : 
 Airthematic operation
 			
