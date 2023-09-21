@@ -5,3 +5,8 @@ type :  connect then give the username and passward (which you have given at the
 
 how to check the current connected username
 sql> show user
+
+how to create user
+------------------
+Syntax : create user <username> identified by <passward>
+sql > create user adil identified by adil@123
