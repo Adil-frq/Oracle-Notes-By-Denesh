@@ -62,6 +62,36 @@ insert into product(pid,pname,cost,mfg,warrenty)
 values('P001', 'Camera', 40000, '12-jun-2001', '2 years');
 
 Note : Date format supported by oracle is: 'dd-mmm-yy'
+----------------------------------------------------------------
+-> Distinct : If you want select only unique value from colums or group of columns the use destinct.
 
+Syntax : (Distinct value from single column)
+           Select distinct <column_name>
+		   from <table_name>
+		   
+Syntax : (Distinct value from group of columns)
+          select distinct (<column_name1>, <column_name2>, <column_namen>)
+          from <table_name>
+
+example : suppose an employee table has a designation column and more than one employee can have same designation  employee table so in that case if you want to get the unique designation from employee table then use distinct keyword	
+
+create table employee(
+    empid varchar(4),
+    ename varchar2(10),
+    salary number(5),
+    designation varchar2(10)
+);
+insert into employee(empid, ename, salary, designation)
+values('E001', 'AAA', 50000, 'developer');
+insert into employee(empid, ename, salary, designation)
+values('E002', 'BBB', 10000, 'Manager');
+insert into employee(empid, ename, salary, designation)
+values('E003', 'CCC', 30000, 'developer');
+insert into employee(empid, ename, salary, designation)
+values('E004', 'DDD', 20000, 'Admin');
+	
+sql> select distinct designation from employee;
+-> Order by : 
+Airthematic operation
 			
 			
