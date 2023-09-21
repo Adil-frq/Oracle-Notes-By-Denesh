@@ -46,6 +46,22 @@ sql > create table company
 		 country varchar2(20),
 		 estd_date date
 	  );
+	  
+create table product
+(
+    pid varchar(4),
+    pname varchar2(10),
+    cost number(10),
+    mfg date,
+    warrenty varchar2(10)
+)
+	  
+Insert value into the database
+-------------------------------
+insert into product(pid,pname,cost,mfg,warrenty)
+values('P001', 'Camera', 40000, '12-jun-2001', '2 years');
+
+Note : Date format supported by oracle is: 'dd-mmm-yy'
 
 			
 			
