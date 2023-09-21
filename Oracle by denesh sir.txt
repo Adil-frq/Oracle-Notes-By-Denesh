@@ -1,0 +1,4 @@
+connect with oracle database
+
+open the sql command line
+type :  connect then give the username and passward (which you have given at the time of installation).
