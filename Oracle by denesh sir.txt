@@ -28,3 +28,24 @@ How to delete the creatd user
 ------------------------------
 Syntax : drop user <Username>
 sql > drop user adil
+
+How to create table
+-------------------
+Syntax : create table <table_name>
+         (
+		    col1 datatypes size(),
+		    col2 datatypes size(),
+			
+		    coln datatypes size()
+		);
+		
+sql > create table company
+      (
+	      ccode char(10),
+		 cname varchar2(20),
+		 country varchar2(20),
+		 estd_date date
+	  );
+
+			
+			
