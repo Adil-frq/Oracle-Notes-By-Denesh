@@ -17,3 +17,14 @@ Note : the crated user does not have any permission
  -------------------------------------
  Sysntax : grant resource, connect to <username>
  sql > grant resource,connect to adil
+ 
+for clear screen
+-----------------
+sql cl scr;
+
+Note : The creatd user is stored in the ALL_USERS table in oracle
+
+How to delete the creatd user
+------------------------------
+Syntax : drop user <Username>
+sql > drop user adil
