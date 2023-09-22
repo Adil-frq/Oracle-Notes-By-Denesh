@@ -129,6 +129,23 @@ Q display the customer record based on their name & city
    sql > select * 
          from customer
 		 order by name, city;		
+
 Airthematic operation
+  +, - , *, /
+Note : you can perform arithmetic operation based on the user data as well on the table data.
+
+perform arithmetic operation on the user data
+
+sql > select 100 + 200 * 5 from dual
+     o/p -> 1100
+
+sql > select 100+ 200 "addition"
+      from dual;			
 			
-			
+perform arithmetic operation on the table data
+Q: show the employee salary and add the 100 in each salary
+   sql > select sal , (sal+100) "incremental salary"
+         from employee;
+
+		 
+
