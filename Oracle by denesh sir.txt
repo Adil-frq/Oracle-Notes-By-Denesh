@@ -104,6 +104,12 @@ select ename "employee_name",
        DESIGNATION "designation"
 from employee;
 
+Create table based on distinct record 
+---------------------------------------
+sql > create table dept_info
+as
+select distinct(depno, dname)
+from dept;
 select * from emp_name_designation				
 
 
