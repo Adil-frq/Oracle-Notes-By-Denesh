@@ -113,7 +113,22 @@ from dept;
 select * from emp_name_designation				
 
 
--> Order by : 
+-> Order by : If you want to display data in sorting order then use order by clause
+       select col1, col2, coln
+	   from <table_name>
+	   order by col1, col2, coln [asc/desc];
+Q: display employee salary in accending order
+   sql> select *
+        from employee
+		order by sal;
+Q: display customer info based on gender order?
+
+    sql> select * from customer
+	     order by gender;
+Q display the customer record based on their name & city
+   sql > select * 
+         from customer
+		 order by name, city;		
 Airthematic operation
 			
 			
