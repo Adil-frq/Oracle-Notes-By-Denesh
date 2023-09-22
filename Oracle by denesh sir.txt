@@ -151,7 +151,15 @@ Q: display the employee salary and calculate ta , da and basic salary
     sql> select sal , (0.05*sal) "Ta",
 	            (0.10 * sal) "DA"
                  (sal +	(0.05*sal) + (0.10 *sal) "basic"
-        from employee;				 
-	
+        from employee;			
+Relational Operator
+--------------------	
+< , > , <= , >= , =
+Relational operator is used to check the conditions with the where clause;
+   
+   syntax: select co1, col2, ...coln
+           from <table_name>
+		   where (conditions)
+		   order by (col1, col2,) [asc/desc];
 		 
 
