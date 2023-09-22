@@ -147,5 +147,11 @@ Q: show the employee salary and add the 100 in each salary
    sql > select sal , (sal+100) "incremental salary"
          from employee;
 
+Q: display the employee salary and calculate ta , da and basic salary
+    sql> select sal , (0.05*sal) "Ta",
+	            (0.10 * sal) "DA"
+                 (sal +	(0.05*sal) + (0.10 *sal) "basic"
+        from employee;				 
+	
 		 
 
